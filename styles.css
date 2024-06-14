@@ -95,7 +95,80 @@ img {
 	color: var(--alert)
 }
 
+/* Sign Up Form */
+form {
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+	padding: 18px 32px;
+}
 
+form header {
+	margin-bottom: 18px;
+}
+
+/* Form controls container */
+.form-controls {
+	width: 75%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+}
+
+.form-flex:not(.checkbox) {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+	gap: 4px
+}
+
+.form-flex:is(.checkbox) {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 1.125rem;
+}
+
+.form-flex input:not([type="checkbox"]),
+.form-flex select {
+	min-width: 280px;
+	max-width: 400px;
+	padding: 8px;
+	border: 1px solid #696969;
+	background-color: #333;
+	border-radius: 4px;
+}
+
+/* Custom checkbox */
+.checkbox input[type="checkbox"] {
+	appearance: none;
+	position: relative;
+	height: 20px;
+	width: 20px;
+	padding: 12px;
+}
+
+.checkbox input[type="checkbox"]::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	border-radius: 4px;
+	background: var(--accent);
+	transition: all 0.3s ease;
+}
+
+.checkbox input[type="checkbox"]:checked::before {
+	content: "✔";
+	font-weight: bold;
+	color: var(--accent);
+	background: #696969;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+}
 
 
 
