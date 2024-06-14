@@ -7,5 +7,114 @@
 		<link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
 		<title>Diablo 4 Beta Sign-Up</title>
 	</head>
-	<body></body>
+	<body>
+		<main class="container">
+			<section class="form-image">
+				<img
+					src="./img/vessel-of-hatred-spiritborn.jpg"
+					width="500px"
+					alt="New Spiritborn class in Diablo 4: Vessel of Hatred expansion" />
+			</section>
+			<section class="form-container">
+				<header>
+					<h2>
+						<span id="disclaimer">Disclaimer - </span> This is not a real online
+						service!
+					</h2>
+					<p>
+						Shape the future of Sanctuary! Join the exclusive closed beta for
+						<strong>Diablo 4's</strong> first story expansion,
+						<strong>Vessel of Hatred</strong>. Challenge the Prime Evil,
+						<strong>Mephisto - The Lord of Hatred</strong> himself, and
+						experience the epic new content before anyone else.
+					</p>
+					<p>Limited slots available. Secure your place in the beta today!</p>
+				</header>
+				<form action="" class="form">
+					<header>
+						<h3>Get Closed Beta Access</h3>
+						<p>
+							Note: Prior
+							<a href="https://www.battle.net" target="_blank">Battle.net</a>
+							account is not required.
+						</p>
+					</header>
+					<div class="form-controls">
+						<div class="form-flex">
+							<label for="name"
+								>Full Name<span aria-hidden="true">*</span></label
+							>
+							<input
+								type="text"
+								id="name"
+								name="name"
+								placeholder="John Smith"
+								required />
+						</div>
+						<div class="form-flex">
+							<label for="email">Email<span aria-hidden="true">*</span></label>
+							<input
+								type="email"
+								id="email"
+								name="email"
+								placeholder="John.Smith@exmaple.com"
+								required />
+						</div>
+						<div class="form-flex">
+							<label for="password"
+								>Password<span aria-hidden="true">*</span></label
+							>
+							<input type="password" id="password" name="password" required />
+						</div>
+						<div class="form-flex">
+							<label for="password-confirm">
+								Confirm password<span aria-hidden="true">*</span></label
+							>
+							<input
+								type="password"
+								id="password-confirm"
+								name="password-confirm"
+								required />
+						</div>
+						<div class="form-flex">
+							<label for="birthday"
+								>Date of birth:<span aria-hidden="true">*</span></label
+							>
+							<input
+								type="date"
+								id="birthday"
+								name="birthday"
+								required
+								min="2011-06-13"
+								max="2024-12-31" />
+						</div>
+						<div class="form-flex">
+							<label for="platform">Platform <span>(optional)</span></label>
+							<select name="platform" id="platform">
+								<option value="" selected>Select Platform</option>
+								<option value="steam">Steam</option>
+								<option value="battle-net">Battle.net</option>
+								<option value="xbox">Xbox Game Pass</option>
+								<option value="psn">Playstation Network</option>
+							</select>
+						</div>
+						<div class="form-flex">
+							<input
+								type="checkbox"
+								id="terms-and-conditions"
+								name="terms-and-conditions"
+								required />
+							<label for="terms-and-conditions">
+								I've read and agree with the
+								<a href="#">terms and conditions</a
+								><span aria-hidden="true">*</span>
+							</label>
+						</div>
+					</div>
+					<button type="submit">Sign Up</button>
+				</form>
+				<p>Already have an account? <a href="#">Log in here</a></p>
+			</section>
+		</main>
+	</body>
 </html>
