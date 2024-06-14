@@ -55,7 +55,45 @@ body {
 	color: #dedede;
 }
 
+/* Main container */
+.container {
+	display: flex;
+	height: 100%;
+}
 
+/* Img container */
+.form-image {
+	flex: 2;
+}
+
+img {
+	display: block;
+	object-fit: cover;
+	height: 100%;
+	max-width: 100%;
+}
+
+/* Form container */
+.form-container {
+	flex: 3;
+}
+
+.form-container>header {
+	margin: 10% 0 22px;
+	padding: var(--defaultPadding);
+}
+
+.form-container>header>h2 {
+	font-size: 1.5rem;
+}
+
+.form-container>header p {
+	margin: 12px 0 32px;
+}
+
+#disclaimer {
+	color: var(--alert)
+}
 
 
 
