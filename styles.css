@@ -102,16 +102,13 @@ form {
 	padding: 18px 32px;
 }
 
-form header {
-	margin-bottom: 18px;
-}
-
 /* Form controls container */
 .form-controls {
 	width: 75%;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 16px;
+	margin: 22px 0 30px;
 }
 
 .form-flex:not(.checkbox) {
@@ -136,6 +133,7 @@ form header {
 	border: 1px solid #696969;
 	background-color: #333;
 	border-radius: 4px;
+	transition: all 0.3s ease;
 }
 
 /* Custom checkbox */
@@ -161,7 +159,6 @@ form header {
 
 .checkbox input[type="checkbox"]:checked::before {
 	content: "✔";
-	font-weight: bold;
 	color: var(--accent);
 	background: #696969;
 	display: flex;
@@ -170,6 +167,42 @@ form header {
 	border: none;
 }
 
+/* Button */
+.form button[type="submit"] {
+	font-weight: bold;
+	padding: 10px 44px;
+	border: 1px solid #696969;
+	border-radius: 4px;
+	font-size: 1.2rem;
+	color: #333;
+	background-color: var(--accent);
+	transition: all 0.3s ease;
+}
 
+.form button[type="submit"]:hover {
+	background-color: #696969;
+	color: #f5f5f5;
+	border: 1px solid var(--accent);
+}
 
+/* Required field asterisk */
+label > span.required {
+	color: var(--alert);
+}
 
+/* Required input fields */
+.form-flex input:not([type="checkbox"]):invalid {
+	border: 1px solid var(--alert);
+	box-shadow: 0 0 12px 2px var(--alert);
+}
+
+/* Valid input */
+.form-flex input:not([type="checkbox"]):valid {
+	border: 1px solid var(--accent);
+}
+
+/* Fields activated by user */
+.form-flex input:not([type="checkbox"]):focus {
+	box-shadow: 0 0 12px #f5f5f5;
+	transform: scale(1.02);
+}
