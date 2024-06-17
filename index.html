@@ -49,6 +49,7 @@
 								placeholder="John Smith"
 								autocomplete="off"
 								required />
+							<span class="invalid">Please insert your full name</span>
 						</div>
 						<div class="form-flex">
 							<label for="email"
@@ -61,6 +62,7 @@
 								placeholder="John.Smith@exmaple.com"
 								autocomplete="off"
 								required />
+							<span class="invalid">Please insert a valid e-mail address</span>
 						</div>
 						<div class="form-flex">
 							<label for="password"
@@ -68,7 +70,15 @@
 									>*</span
 								></label
 							>
-							<input type="password" id="password" name="password" required />
+							<input
+								type="password"
+								id="password"
+								name="password"
+								pattern=".*[A-Z].*"
+								required />
+							<span class="invalid"
+								>Password must have at least 1 uppercase letter</span
+							>
 						</div>
 						<div class="form-flex">
 							<label for="password-confirm">
@@ -80,7 +90,11 @@
 								type="password"
 								id="password-confirm"
 								name="password-confirm"
+								pattern=".*[A-Z].*"
 								required />
+							<span class="invalid"
+								>Password must have at least 1 uppercase letter</span
+							>
 						</div>
 						<div class="form-flex">
 							<label for="birthday"
@@ -94,6 +108,7 @@
 								name="birthday"
 								required
 								max="2011-06-13" />
+							<span class="invalid">You must be at least 13 years old</span>
 						</div>
 						<div class="form-flex">
 							<label for="platform">Platform <span>(optional)</span></label>
