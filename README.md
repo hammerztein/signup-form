@@ -20,11 +20,12 @@ Create a sign up form for an imaginary service.
 - Pseudo-classes
 - Flexbox design
 - `pattern` attribute
+- User-agent `:focus-visible`
 
 ## What I Learned
 
 - How to validate using HTML
-- How to use `:valid` and `:invalid` pseudo-classes
+- How to use `:not`, `:valid`, `:focus` and `:invalid` pseudo-classes
 - How to create custom checkboxes
 - How to use basic RegEx and `pattern` attribute on input fields
 
