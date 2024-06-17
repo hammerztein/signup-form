@@ -43,7 +43,8 @@ button {
 }
 
 a {
-	color: var(--accent)
+	color: var(--accent);
+	transition: all 0.3s ease;
 }
 
 body {
@@ -183,6 +184,7 @@ form {
 	background-color: #696969;
 	color: #f5f5f5;
 	border: 1px solid var(--accent);
+	box-shadow: 0px 0px 8px 2px var(--accent);
 }
 
 /* Required field asterisk */
@@ -199,10 +201,23 @@ label > span.required {
 /* Valid input */
 .form-flex input:not([type="checkbox"]):valid {
 	border: 1px solid var(--accent);
+	box-shadow: 0 0 12px 2px var(--accent);
 }
 
 /* Fields activated by user */
 .form-flex input:not([type="checkbox"]):focus {
-	box-shadow: 0 0 12px #f5f5f5;
+	box-shadow: 0 0 12px 3px #f5f5f5;
 	transform: scale(1.02);
+}
+
+/* Link hover state */
+a:hover {
+	color: var(--alert);
+}
+
+/* Login text */
+.log-in {
+	width: 70%;
+	margin-top: 16px;
+	text-align: center;
 }
