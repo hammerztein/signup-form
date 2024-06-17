@@ -141,8 +141,8 @@ form {
 .checkbox input[type="checkbox"] {
 	appearance: none;
 	position: relative;
-	height: 20px;
-	width: 20px;
+	height: 18px;
+	width: 18px;
 	padding: 12px;
 }
 
@@ -154,7 +154,7 @@ form {
 	height: 100%;
 	width: 100%;
 	border-radius: 4px;
-	background: var(--accent);
+	background: var(--alert);
 	transition: all 0.3s ease;
 }
 
@@ -196,6 +196,17 @@ label > span.required {
 .form-flex input:not([type="checkbox"]):invalid {
 	border: 1px solid var(--alert);
 	box-shadow: 0 0 12px 2px var(--alert);
+}
+
+/* Hide invalid text by default */
+span.invalid {
+	display: none;
+}
+
+.form-flex input:not([type="checkbox"]):invalid + span.invalid {
+	display: inline-block;
+	color: var(--alert);
+	font-size: 0.75rem;
 }
 
 /* Valid input */
