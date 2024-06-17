@@ -195,7 +195,7 @@ label > span.required {
 /* Required input fields */
 .form-flex input:not([type="checkbox"]):invalid {
 	border: 1px solid var(--alert);
-	box-shadow: 0 0 12px 2px var(--alert);
+	box-shadow: 0 0 5px var(--alert);
 }
 
 /* Hide invalid text by default */
@@ -212,11 +212,18 @@ span.invalid {
 /* Valid input */
 .form-flex input:not([type="checkbox"]):valid {
 	border: 1px solid var(--accent);
-	box-shadow: 0 0 12px 2px var(--accent);
+	box-shadow: 0 0 5px var(--accent);
+}
+
+/* User-Agent Focus */
+.form-flex input:not([type="checkbox"]):focus-visible,
+.form-flex select:focus-visible {
+	outline: none;
 }
 
 /* Fields activated by user */
 .form-flex input:not([type="checkbox"]):focus {
+	border: 1px solid #333;
 	box-shadow: 0 0 12px 3px #f5f5f5;
 	transform: scale(1.02);
 }
