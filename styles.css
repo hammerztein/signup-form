@@ -93,7 +93,7 @@ img {
 }
 
 #disclaimer {
-	color: var(--alert)
+	color: var(--alert);
 }
 
 /* Sign Up Form */
@@ -155,6 +155,7 @@ form {
 	height: 100%;
 	width: 100%;
 	border-radius: 4px;
+	border: 1px solid #696969;
 	background: var(--alert);
 	transition: all 0.3s ease;
 }
@@ -166,7 +167,7 @@ form {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: none;
+	border-color: #f5f5f5;
 }
 
 /* Button */
@@ -194,7 +195,7 @@ label > span.required {
 }
 
 /* Required input fields */
-.form-flex input:not([type="checkbox"]):invalid {
+.form-flex input.validate:not([type="checkbox"]):invalid {
 	border: 1px solid var(--alert);
 	box-shadow: 0 0 5px var(--alert);
 }
@@ -204,28 +205,30 @@ span.invalid {
 	display: none;
 }
 
-.form-flex input:not([type="checkbox"]):invalid + span.invalid {
+.form-flex input.validate:not([type="checkbox"]):invalid + span.invalid {
 	display: inline-block;
 	color: var(--alert);
 	font-size: 0.75rem;
 }
 
 /* Valid input */
-.form-flex input:not([type="checkbox"]):valid {
+.form-flex input.validate:not([type="checkbox"]):valid {
 	border: 1px solid var(--accent);
 	box-shadow: 0 0 5px var(--accent);
 }
 
 /* User-Agent Focus */
-.form-flex input:not([type="checkbox"]):focus-visible,
+.form-flex input:not([type="checkbox"]):focus-visible
+.form-flex input.validate:not([type="checkbox"]):focus-visible,
 .form-flex select:focus-visible {
 	outline: none;
 }
 
 /* Fields activated by user */
-.form-flex input:not([type="checkbox"]):focus {
+.form-flex input:not([type="checkbox"]):focus,
+.form-flex input.validate:not([type="checkbox"]):focus {
 	border: 1px solid #333;
-	box-shadow: 0 0 12px 3px #f5f5f5;
+	box-shadow: 0 0 5px 3px #ADD8E6;
 	transform: scale(1.02);
 }
 
@@ -236,7 +239,7 @@ a:hover {
 
 /* Login text */
 .log-in {
-	width: 70%;
+	width: 75%;
 	margin-top: 16px;
 	text-align: center;
 }
