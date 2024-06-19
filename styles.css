@@ -222,7 +222,7 @@ span.invalid {
 	display: none;
 }
 
-.form-flex input.validate:not([type="checkbox"]):invalid + span.invalid {
+.form-flex input.validate:not([type="checkbox"]):invalid ~ span.invalid {
 	display: inline-block;
 	color: var(--alert);
 	font-size: 0.75rem;
