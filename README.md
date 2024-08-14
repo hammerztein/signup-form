@@ -12,7 +12,7 @@ Create a sign up form for an imaginary service.
 
 ## Links
 
-[Live app preview](https://hammerztein.github.io/odin-signup-form/)
+[Live app preview](https://hammerztein.github.io/signup-form/)
 
 ## Things I Used
 
